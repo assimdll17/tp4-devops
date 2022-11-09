@@ -34,5 +34,10 @@ pipeline {
     } 
    } 
   } 
+  stage('Deploy image') { 
+   steps{ 
+    bat "docker run -d -p 8083:80 $registry:$BUILD_NUMBER" 
+   }
+  }
  } 
 }
