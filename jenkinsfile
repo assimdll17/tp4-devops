@@ -1,7 +1,7 @@
 pipeline { 
  environment { 
   registry = "assimdll/webapp" 
-  registryCredential = 'Aassmm99@' 
+  registryCredential = 'dockerhub' 
   dockerImage = '' 
  } 
  agent any 
